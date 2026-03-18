@@ -1,3 +1,4 @@
+#include<stdio.h>
 /*int main(){
     int choice, n, i;
     float num, result;
@@ -1349,11 +1350,9 @@ int main(){
 
     return 0;
 }
-*/
 
 //.................................STRING.................//
 //....print a simple message .............
-#include<stdio.h>
 void printname(char arr[]);
 int main(){
     char firstn[] = "shradha";
@@ -1372,7 +1371,7 @@ void printname(char arr[]){
 }
 
 //........use of function like gets(str), puts(str), fgets(str, n, file)................   
-/*void printstr(char arr[]);
+void printstr(char arr[]);
 
 int main(){
     char str[100];
