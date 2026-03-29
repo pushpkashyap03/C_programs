@@ -1,15 +1,19 @@
 //..............................BASICS......................
-//.......WAP TO PRINT the swaping of two numbers........
+//.......WAP TO PRINT the even and odd numbers........
 #include<stdio.h>
 int main(){
-    int a,b;
-    printf("enter two numbers ");
-    scanf("%d%d", &a,&b);
-    printf("before swaping a and b is : %d and %d \n",a, b);
-    int m=a;
-    a=b;
-    b=m;
-    printf("after swaping a and b : %d and %d ",a, b);
+    int a;
+    printf("enter number :");
+    scanf("%d", &a);
+
+    if(a%2==0){
+        printf("even");
+    }    
+    else if(a%2!=0){
+        printf("odd");
+    }
+    else
+        printf("invalid input");
 
     return 0;
 }
