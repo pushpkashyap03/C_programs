@@ -1,19 +1,25 @@
 //..............................BASICS......................
-//.......WAP TO PRINT the even and odd numbers........
+//.......WAP TO PRINT the largest of three numbers........
 #include<stdio.h>
 int main(){
-    int a;
-    printf("enter number :");
-    scanf("%d", &a);
+    int a,b,c;
+    printf("enter numbers :");
+    scanf("%d %d %d", &a,&b,&c);
 
-    if(a%2==0){
-        printf("even");
+    if(a>b){
+        if(a>c){
+            printf("%d is largest ",a);
+        }
+        else
+            printf("%d is largest",c);
     }    
-    else if(a%2!=0){
-        printf("odd");
+    else if(b>a){
+        if(b>c){
+            printf("%d is largest",b);
+        }
+        else
+            printf("%d is largest",c);
     }
-    else
-        printf("invalid input");
 
     return 0;
 }
