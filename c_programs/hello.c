@@ -1,4 +1,4 @@
-//.....WAP to print reverse order of table entered by user 
+//.....WAP to print the fibonacci user
 #include<stdio.h>
 int main(){
     int n;
