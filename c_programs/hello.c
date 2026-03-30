@@ -1,15 +1,13 @@
-//.....WAP to print the sum of first n natural numbers
+//.....WAP to print reverse order of first n natural numbers
 #include<stdio.h>
 int main(){
     int n;
-    printf("enter n :");
+    printf("enter numbers :");
     scanf("%d", &n);
 
-    int fact=1;
-    for(int i=1; i<=n; i++){
-        fact=fact*i;
+    for(int i=n; i>=1; i--){
+        printf("%d\n", i);
     }
-    printf("the factorial is : %d", fact);
+
     return 0;
-    
 }
