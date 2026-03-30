@@ -1,12 +1,15 @@
-//.....write a program to print the number from 1 to n :..........
+//.....WAP to print the sum of first n natural numbers
 #include<stdio.h>
 int main(){
     int n;
     printf("enter n :");
     scanf("%d", &n);
 
+    int fact=1;
     for(int i=1; i<=n; i++){
-        printf("%d\t", i);
+        fact=fact*i;
     }
+    printf("the factorial is : %d", fact);
     return 0;
+    
 }
