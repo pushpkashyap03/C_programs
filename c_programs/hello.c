@@ -1,12 +1,14 @@
-//.....WAP to print reverse order of first n natural numbers
+//.....WAP to print table of a number entered by user 
 #include<stdio.h>
 int main(){
-    int n;
-    printf("enter numbers :");
+    int n,m;
+    printf("enter number :");
     scanf("%d", &n);
 
-    for(int i=n; i>=1; i--){
-        printf("%d\n", i);
+    printf("the table of %d is :\n", n);
+    for(int i=1; i<=10; i++){
+        m = n*i;
+        printf("%d\n", m);
     }
 
     return 0;
