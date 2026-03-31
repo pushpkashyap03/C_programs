@@ -1,21 +1,30 @@
 //.....WAP to check the number is palindrome or not 
 #include<stdio.h>
+#include<math.h>
 int main(){
-    int n,remainder,original,reversed=0;
-    printf("enter number :");
-    scanf("%d", &n);
+    int num,n=0,original,remainder;
+    double sum=0.0;
 
-    original=n;
-    while (n!=0) {
-        remainder = n%10;
-        reversed = reversed*10 + remainder;
-        n /=10;
+    printf("enter number :");
+    scanf("%d", &num);
+    original=num;
+
+    int temp=original;
+    while(temp !=0 ){
+        temp /= 10;
+        n++;
     }
-    if(original==reversed){
-        printf("%d is a palindrome number :)", original);
+
+    temp = original;
+    while( temp != 0){
+        remainder = temp % 10;
+        sum += pow(remainder,n);
+        temp /= 10;
     }
-    else{
-        printf("%d is not a palindrome number :(", original);
+    if((int)sum==original){
+        printf("%d is armstrong number ",original);
     }
+    else 
+        printf("the num is not a armstrong num ");
     return 0;
 }
