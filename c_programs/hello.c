@@ -1,23 +1,20 @@
-//.....WAP to print the fibonacci user
+//.....WAP to print the product of all digits entered by user
 #include<stdio.h>
 int main(){
-    int n;
-    printf("enter number up to which you want fibonacci series :");
+    int n,digit,product=1;
+    printf("enter number :");
     scanf("%d", &n);
-    printf("the fibonacci series is :");
 
-    int next,first=0,second=1;
-    for(int i=0; i<n; i++){
-        if(i<=1){
-            next = i;
+    while(n != 0){
+        if(digit==0){
+            product=0;
         }
-        else 
-            next = first+second;
-            first = second;
-            second = next;
-        printf("%d", next);
+        else    
+            digit = n % 10;
+            product *= digit;
+            n /= 10;
     }
-    printf("\n");
+    printf("the product is : %d \n", product);
 
     return 0;
 }
