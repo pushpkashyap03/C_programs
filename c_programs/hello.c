@@ -1,4 +1,4 @@
-//.....WAP to check the number is palindrome or not 
+//.....WAP to check the number is armstrong num or not 
 #include<stdio.h>
 #include<math.h>
 int main(){
