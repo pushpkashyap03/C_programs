@@ -1,20 +1,21 @@
-//.....WAP to print the product of all digits entered by user
+//.....WAP to check the number is palindrome or not 
 #include<stdio.h>
 int main(){
-    int n,digit,product=1;
+    int n,remainder,original,reversed=0;
     printf("enter number :");
     scanf("%d", &n);
 
-    while(n != 0){
-        if(digit==0){
-            product=0;
-        }
-        else    
-            digit = n % 10;
-            product *= digit;
-            n /= 10;
+    original=n;
+    while (n!=0) {
+        remainder = n%10;
+        reversed = reversed*10 + remainder;
+        n /=10;
     }
-    printf("the product is : %d \n", product);
-
+    if(original==reversed){
+        printf("%d is a palindrome number :)", original);
+    }
+    else{
+        printf("%d is not a palindrome number :(", original);
+    }
     return 0;
 }
