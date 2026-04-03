@@ -1,4 +1,4 @@
-//.....WAP to check the number is armstrong num or not 
+//.....WAP to print the sum of the nums that the user wants to print
 #include<stdio.h>
 #include<math.h>
 int main(){
