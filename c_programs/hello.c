@@ -1,4 +1,4 @@
-//.....WAP to print prime number from 1 to n
+//.....WAP to Print numbers from 1 to n, and stop as soon as the num divisible by 20 encountered
 #include<stdio.h>
 int main(){
     int n;
@@ -6,9 +6,9 @@ int main(){
     scanf("%d", &n);
 
     for(int i=1; i<=n; i++){
-        if(i%17 == 0){
+        if(i%20 == 0){
             printf("__\n");
-            continue;
+            break;
         }
     printf("%d\n", i);
     }
