@@ -1,25 +1,22 @@
-//.....WAP to print the product of the nums that user wants
+//.....WAP to print prime number from 1 to n
 #include<stdio.h>
-#include<math.h>
 int main(){
-    int n, num, product=1;
-    printf("how much nums you want to multiply :");
+    int n, isprime;
+    printf("enter numbers :");
     scanf("%d", &n);
 
-    for(int i=1; i<=n; i++){
-        printf("enter number %d :", i);
-        scanf("%d", &num);
-
-        if(num!=0){
-            product *= num;
+    for(int i=2; i<=n; i++){
+        isprime = 1;
+        for(int j=2; j <= i/2; j++){
+            if(i % j == 0){
+                isprime = 0;
+                break;
+            }
         }
-        else if(num==0){
-            product=0; 
-            printf("%d", product);
+        if(isprime == 1){
+            printf("%d\n", i);
         }
-        else printf("");
     }
-    printf("the total product is : %d", product);
 
     return 0;
 }
